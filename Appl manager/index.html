@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title id="title">Application Manager</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="main.js"></script>
+	<style>
+		.form_container{
+			margin-right:30%;
+			margin-left:20%; 
+			padding:5px;
+		}
+		td.btns{
+			width:15%;
+		}
+	</style>
+</head>
+<body>
+<nav class="navbar navbar-default ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Application Manager</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html?navigate=add">Add New Student</a></li>
+      <li><a href="index.html?navigate=listall">List All Students</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- here the real page goes, so I need to figure it  out how to write it... using JS;)-->
+	<div class="container">
+		<div id="content">
+		</div>
+	</div>
+	<script> 
+		var navigate = location.search.split('navigate=')[1];
+		printContent(navigate);
+	</script>
+</body>
+</html>
